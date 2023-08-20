@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-image: url(./images/relax.jpeg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar.scrolled {
+    background-color: black;
+}
+
+.logo img {
+    height: 5vw;
+    width: 5vw;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 30px;
+    opacity: 70%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000cf;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a {
+    font-weight: 800;
+    font-size: 4vw;
+}
+
+.sidenav a:hover {
+    color: #939393;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu {
+    position: absolute;
+    left: 85vw;
+    color: rgb(23, 22, 22);
+}
+
+.menu img {
+    height: 4vw;
+    width: 4vw;
+    cursor: pointer;
+    margin-top: 30px;
+    opacity: 70%;
+    margin-left: 90%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    color: #e3e3e3cc;
+}
+
+.header p {
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+    color: #e1dfdf;
+}
+
+.header button {
+    height: 5vw;
+    width: 15vw;
+    background-color: yellow;
+    font-weight: 800;
+    font-size: 1.5rem;
+    border: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.why-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 35px;
+}
+
+.story-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    margin-left: 15px;
+    margin-top: 80px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.story-text h4 {
+    color: yellow;
+    font-size: 1.6rem;
+}
+
+.story-text h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+
+.story-text p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.story-text button {
+    height: 5vw;
+    width: 10vw;
+    background-color: yellow;
+    margin-top: 30px;
+    cursor: pointer;
+    border: black;
+}
+
+.story-text button a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+}
+
+.lady-image img {
+    height: 40vw;
+    width: 35vw;
+    border-radius: 25px;
+    padding: 15px;
+    margin-right: 70px;
+    margin-top: 20%;
+}
+
+.features {
+    background-color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.features h4 {
+    color: yellow;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+
+.features h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 7%;
+}
+
+.card1,
+.card2,
+.card3 {
+    height: 450px;
+    width: 30%;
+    background-color: #141414;
+    transition: all 0.5s ease-in-out;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: scale(1) translate(0%, -5%);
+}
+
+.cards img {
+    margin-top: 15%;
+    margin-left: 8%;
+    height: 20%;
+    width: 25%;
+}
+
+.cards h1 {
+    font-size: 1.7rem;
+    margin-top: 6%;
+    text-align: left;
+    margin-left: 8%;
+}
+
+.cards p {
+    margin-left: 8%;
+    margin-top: 6%;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: #818181;
+}
+
+.features button {
+    background-color: rgb(143, 143, 1);
+    height: 5vw;
+    width: 10vw;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 45%;
+    border: black;
+    cursor: pointer;
+}
+
+.features button:hover {
+    background-color: rgb(50, 57, 6);
+    transition: all 1s ease-in-out;
+    transform: scale(1.05)
+}
+
+.features button a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.features button a:hover {
+    color: white;
+}
+
+.clients {
+    background-color: #141414;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.clients h4 {
+    color: yellow;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+
+.clients h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
